@@ -11,6 +11,29 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>Conversor de Temperatura</h1>
+        
+        <p>Este conversor permite pasar una temperatura en grados centigrados a grados fahrenheit y vice versa.</p>
+        
+        <h4>Fahrenheit a Centigrados</h4>
+        <label for="valorF">Fahrenheit: </label>
+        <input id="valorF" placeholder="Ingrese la temperatura">
+        <button id="botonF" onclick="Conversor.fc()">Convert</button><br><br>
+        <label for="c">Centigrados: </label>
+        <label id="c"></label>
+        
+        <h4>Centigrados a Fahrenheit</h4>
+        <label for="valorC">Centigrados: </label>
+        <input id="valorC" placeholder="Ingrese la temperatura">
+        <button id="botonC" onclick="Conversor.cf()">Convert</button><br><br>
+        <label for="f">Fahrenheit: </label>
+        <label id="f"></label>
+        
+        <h2>Conexion por URL</h2>
+        <p>Otro forma de usar el servicio es por medio de la url.</p>
+        
+        <!--Scripts-->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/index.js"></script>
     </body>
 </html>
