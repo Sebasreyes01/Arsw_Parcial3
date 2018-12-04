@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author estudiante
  */
-//@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "http://localhost:8080")
 @RestController
 @RequestMapping(value = "/conversor")
 public class ConversorAPIController {

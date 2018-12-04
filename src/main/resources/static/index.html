@@ -30,7 +30,26 @@ and open the template in the editor.
         <label id="f"></label>
         
         <h2>Conexion por URL</h2>
-        <p>Otro forma de usar el servicio es por medio de la url.</p>
+        <p>Otra forma de usar el servicio es por medio de la url.<br>
+           Usted puede ingresar a https://arsw-parcial3.herokuapp.com/conversor/celsius/valor
+           para convertir de centigrados a fahrenheit, reemplazando la palabra 'valor' por el
+           valor de la temperatura. E.g. https://arsw-parcial3.herokuapp.com/conversor/celsius/10.<br>
+           De igual forma puede ingresar a https://arsw-parcial3.herokuapp.com/conversor/fahrenheit/valor
+           para convertir de fahrenheit a centigrados, reemplazando la palabra 'valor' por el valor de la
+           temperatura. E.g. https://arsw-parcial3.herokuapp.com/conversor/fahrenheit/50.</p>
+        
+        <h2>Conexion por JS</h2>
+        <p>Para conectarse por medio de JS puede usar el cliente basado en promesas axios de la siguiente forma:<br><br>
+            axios.get('https://arsw-parcial3.herokuapp.com//conversor/grados/valor')<br>
+                .then(function (response) {<br>
+                // handle success<br>
+                console.log(response);<br>
+                })<br>
+                .catch(function (error) {<br>
+                // handle error<br>
+                console.log(error);<br>
+                })<br><br>
+           Reemplazando valor por el valor de la temperatura y reemplazando grados por 'celsius' o 'fahrenheit' segun sea el caso.</p>
         
         <!--Scripts-->
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
