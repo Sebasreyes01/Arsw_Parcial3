@@ -1,8 +1,8 @@
 var Conversor = (function () {
     
     const instance = axios.create({
-        baseURL: 'http://localhost:8080'
-        //baseURL: ''
+        //baseURL: 'http://localhost:8080'
+        baseURL: 'https://arsw-parcial3.herokuapp.com'
     });
 
     
